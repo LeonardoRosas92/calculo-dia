@@ -50,7 +50,7 @@ const calculate = () => {
   const nameDay = daysName[new Date(dateString).getDay()];
   const msg = workdays.includes(nameDay) ? `${nameDay} dia hábil` : `${nameDay} Dia inhabil`;
   textResult.textContent=msg;
-  imgResult.src = workdays.includes(nameDay) ? './src/assets/img/work_day.svg' : './src/assets/img/rest_day.svg'
+  imgResult.src = workdays.includes(nameDay) ? '/img/work_day.svg' : '/img/rest_day.svg'
 }
 inputYear.addEventListener('input', setYear);
 inputMonth.addEventListener('change', setDays);
